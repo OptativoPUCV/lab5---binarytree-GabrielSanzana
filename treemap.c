@@ -83,7 +83,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     }
     else
     {  
-      if (tree->lower_than(aux->pair->key,key))
+      if (tree->lower_than(aux->pair->key,key) ==1)
       {
         printf("%d",tree->lower_than(aux->pair->key,key));
         aux = aux->right;
