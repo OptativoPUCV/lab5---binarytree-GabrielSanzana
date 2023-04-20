@@ -965,3 +965,27 @@ treemap.c:188:12: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 102bebc
+Thu 20 Apr 2023 09:31:00 PM UTC: 
+ treemap.c | 23 +++++++++++++++++++++--
+ 1 file changed, 21 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:160:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  160 |   TreeNode tree->current = tree->root;
+      |                ^~
+treemap.c:160:16: error: expected expression before ‘->’ token
+treemap.c:164:26: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+  164 |     if(is_equal(tree, aux->pair->key, key))
+      |                          ^~
+treemap.c:174:12: error: incompatible types when assigning to type ‘TreeNode’ from type ‘TreeNode *’
+  174 |        aux=tree->current;
+      |            ^~~~
+treemap.c:179:13: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+  179 |   return aux->pair;
+      |             ^~
+treemap.c:180:1: error: control reaches end of non-void function [-Werror=return-type]
+  180 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+f0a08d3

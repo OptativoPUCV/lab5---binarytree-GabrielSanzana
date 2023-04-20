@@ -157,7 +157,26 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
-    return NULL;
+  TreeNode tree->current = tree->root;
+  TreeNode aux;
+  while(tree->current!=NULL)
+  {
+    if(is_equal(tree, aux->pair->key, key))
+    {
+      return tree->current->pair;
+    }
+    else
+    {  
+      if (tree->lower_than(tree->current->pair->key,key) == 1)
+       tree->current = tree->current->right;
+      else
+      {
+       aux=tree->current; 
+       tree->current = tree->current->left;
+      }
+    }
+  }
+  return aux->pair;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
@@ -185,7 +204,7 @@ Pair * nextTreeMap(TreeMap * tree) {
   else
   {
     tree->current = padreAux;
-    return 'padreAux->pair';
+    return padreAux->pair;
   }
   
 }
