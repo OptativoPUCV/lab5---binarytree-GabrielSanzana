@@ -163,8 +163,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
   {
     if(is_equal(tree, tree->current->pair->key, key))
     {
-      return tree->current->pair;
       puts("caso raiz");
+      return tree->current->pair;
     }
     else
     {  
@@ -182,7 +182,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
     puts("caso mayor");
     return aux->pair;
   }
-  
+  puts('caso nulo');
   return NULL;
 }
 
