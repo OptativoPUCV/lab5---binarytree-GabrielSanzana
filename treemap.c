@@ -181,8 +181,10 @@ Pair * nextTreeMap(TreeMap * tree) {
   }
   
   if(padreAux==NULL)
+  {
     puts("so");
     return NULL;
+  }
   else
   {
     tree->current = padreAux;
