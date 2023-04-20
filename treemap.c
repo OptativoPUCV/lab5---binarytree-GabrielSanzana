@@ -183,5 +183,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     return NULL;
   }
   else
+  {
+    tree->current = padreAux;
     return padreAux->pair;
+  }
 }
