@@ -265,3 +265,14 @@ treemap.c:57:42: error: invalid use of void expression
 cc1: all warnings being treated as errors
 Compilation failed
 a853ad6
+Thu 20 Apr 2023 07:04:22 PM UTC: 
+ treemap.c | 12 +++++-------
+ 1 file changed, 5 insertions(+), 7 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:67:21: error: ‘auxParent’ may be used uninitialized [-Werror=maybe-uninitialized]
+   67 |     auxParent->left = aux;
+      |     ~~~~~~~~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e1a3837
