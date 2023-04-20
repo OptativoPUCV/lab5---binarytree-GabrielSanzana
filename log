@@ -360,3 +360,17 @@ treemap.c:80:13: error: returning ‘Pair *’ from a function with incompatible
 cc1: all warnings being treated as errors
 Compilation failed
 df6f60e
+Thu 20 Apr 2023 07:16:36 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘minimum’:
+treemap.c:77:20: error: ‘TreeNode’ has no member named ‘root’
+   77 |   TreeNode *aux = x->root;
+      |                    ^~
+treemap.c:80:13: error: returning ‘Pair *’ from a function with incompatible return type ‘TreeNode *’ [-Werror=incompatible-pointer-types]
+   80 |   return aux->pair;
+      |          ~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+414b5d2
