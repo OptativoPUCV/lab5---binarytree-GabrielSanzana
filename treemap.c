@@ -54,7 +54,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     if(is_equal(tree, aux->pair->key, key))
       return;
     auxParent = aux;
-    printf("%d %d\n",&aux->pair->key, &key);
+    printf("%d %d\n",*aux->pair->key, *key);
     if (tree->lower_than(aux->pair->key, key) == 1)
     {
       aux = aux->right;
