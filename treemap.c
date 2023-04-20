@@ -88,6 +88,20 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     else
       node->parent->right=NULL;
   }
+  else if(node->left == NULL && node->right !=NULL)
+  {
+    if(node->parent->left == node)
+      node->parent->left=node->right;
+    else
+      node->parent->right=node->right;
+  }
+  else if(node->left != NULL && node->right == NULL)
+  {
+    if(node->parent->left == node)
+      node->parent->left=node->left;
+    else
+      node->parent->right=node->left;
+  }
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
