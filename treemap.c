@@ -170,7 +170,7 @@ Pair * nextTreeMap(TreeMap * tree) {
   {
     aux = minimum(aux->right);
     tree->current = aux;
-    return &(aux->pair);
+    return aux->pair;
   }
   
   TreeNode *padreAux = aux->parent;
@@ -188,7 +188,7 @@ Pair * nextTreeMap(TreeMap * tree) {
   else
   {
     tree->current = padreAux;
-    return &(padreAux->pair);
+    return padreAux->pair;
   }
   
 }
