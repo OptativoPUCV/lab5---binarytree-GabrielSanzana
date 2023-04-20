@@ -570,3 +570,20 @@ Thu 20 Apr 2023 08:54:41 PM UTC:
  tests:  25|1
 total_score: 60/70
 0c85c83
+Thu 20 Apr 2023 09:12:55 PM UTC: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:183:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  183 |   if(padreAux==NULL)
+      |   ^~
+treemap.c:185:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  185 |     return NULL;
+      |     ^~~~~~
+treemap.c:186:3: error: ‘else’ without a previous ‘if’
+  186 |   else
+      |   ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ebae35e
