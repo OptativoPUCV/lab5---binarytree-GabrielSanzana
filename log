@@ -433,3 +433,18 @@ Thu 20 Apr 2023 07:37:04 PM UTC:
  tests:  17|4
 total_score: 35/70
 75f1259
+Thu 20 Apr 2023 07:52:00 PM UTC: 
+ treemap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:120:23: error: ‘auxiliar’ undeclared (first use in this function)
+  120 |     node->pair->key = auxiliar->pair->key;
+      |                       ^~~~~~~~
+treemap.c:120:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:119:15: error: unused variable ‘aux’ [-Werror=unused-variable]
+  119 |     TreeNode *aux = minimum(node->right);
+      |               ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d6b0c77
