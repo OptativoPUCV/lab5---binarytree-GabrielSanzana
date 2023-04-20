@@ -157,7 +157,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
-  TreeNode tree->current = tree->root;
+  tree->current = tree->root;
   TreeNode *aux;
   while(tree->current!=NULL)
   {
