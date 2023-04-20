@@ -391,3 +391,17 @@ Thu 20 Apr 2023 07:18:09 PM UTC:
  tests:  15|4
 total_score: 25/70
 4c6c94e
+Thu 20 Apr 2023 07:27:26 PM UTC: 
+ treemap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:84:40: error: lvalue required as left operand of assignment
+   84 |   if(node->left == NULL && node->right = NULL)
+      |                                        ^
+treemap.c:84:5: error: suggest explicit braces to avoid ambiguous ‘else’ [-Werror=dangling-else]
+   84 |   if(node->left == NULL && node->right = NULL)
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+21f88e5
