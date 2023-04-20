@@ -74,10 +74,9 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
 }
 
 TreeNode * minimum(TreeNode * x){
-  TreeNode *aux = x->root;
-  while(aux->left!=NULL)
-    aux = aux->left;
-  return aux->pair;
+  while(x->left!=NULL)
+    x = x->left;
+  return x->pair;
 }
 
 
