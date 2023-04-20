@@ -173,8 +173,10 @@ Pair * nextTreeMap(TreeMap * tree) {
   }
   TreeNode *padreAux = aux->parent;
   while (padreAux != NULL && padreAux->right == aux)
+  {
     aux = aux->parent;
     padreAux = padreAux->parent;
+  }
   if(padreAux==NULL)
     return NULL;
   else
