@@ -135,3 +135,28 @@ Thu 20 Apr 2023 06:40:27 PM UTC:
  tests:  10|6
 total_score: 15/70
 8aed84a
+Thu 20 Apr 2023 06:42:23 PM UTC: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:54:42: error: expected ‘)’ before ‘return’
+   54 |     if(is_equal(tree, aux->pair->key, key
+      |                ~                         ^
+      |                                          )
+   55 |       return;
+      |       ~~~~~~                              
+treemap.c:62:23: error: expected ‘)’ before ‘}’ token
+   62 |       aux = aux->left;
+      |                       ^
+      |                       )
+   63 |   }
+      |   ~                    
+treemap.c:54:7: note: to match this ‘(’
+   54 |     if(is_equal(tree, aux->pair->key, key
+      |       ^
+treemap.c:63:3: error: expected expression before ‘}’ token
+   63 |   }
+      |   ^
+Compilation failed
+28b84c4
