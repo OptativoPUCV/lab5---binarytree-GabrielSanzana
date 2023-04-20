@@ -178,7 +178,10 @@ Pair * nextTreeMap(TreeMap * tree) {
     padreAux = padreAux->parent;
   }
   if(padreAux==NULL)
+  {
+    tree->current = NULL;
     return NULL;
+  }
   else
     return padreAux->pair;
 }
