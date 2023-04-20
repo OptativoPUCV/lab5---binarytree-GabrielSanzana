@@ -276,3 +276,8 @@ treemap.c:67:21: error: ‘auxParent’ may be used uninitialized [-Werror=maybe
 cc1: all warnings being treated as errors
 Compilation failed
 e1a3837
+Thu 20 Apr 2023 07:05:25 PM UTC: 
+ treemap.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+ tests:  0|0
+c8f8601
